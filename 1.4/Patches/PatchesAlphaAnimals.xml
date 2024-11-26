@@ -1,0 +1,38 @@
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+	<mods>
+		<li>Alpha Animals</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+	<!-- Alpha Animals Terrain -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName = "AA_FertilizedSand"]/affordances</xpath>
+				<value>
+					<li>Sand</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName = "AA_SuperiorFertilizedSand"]/affordances</xpath>
+				<value>
+					<li>Sand</li>
+				</value>
+			</li>				
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName = "AA_PollenSoil"]/affordances</xpath>
+				<value>
+					<li>SoilF</li>
+				</value>
+			</li>				
+
+		</operations>	
+	</match>
+</Operation>
+
+</Patch>
